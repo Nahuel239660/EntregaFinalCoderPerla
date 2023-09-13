@@ -1,0 +1,11 @@
+@media (max-width:1600px){
+    .navbar-index{
+        .responsive-nav{
+            @include flex (column,center,center,wrap);
+            gap: 10rem;
+        }
+        .calidad{
+            margin-top: 0;
+        }
+    }
+}

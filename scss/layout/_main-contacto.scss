@@ -1,0 +1,35 @@
+.main-container {
+    @include flex (row, center, center, wrap);
+
+    .main-contacto {
+        @include flex (column, center, center, wrap);
+        max-width: 78.125rem;
+
+        .flex-contacto {
+            @include flex (column, center, center, unset);
+
+            .textos-comunicacion {
+                text-align: center;
+                max-width: 70ch;
+                padding: 1.875rem 1rem;
+            }
+
+            .nuestras-sucursales {
+                padding: 3.125rem;
+            }
+
+            .mapa {
+                margin-bottom: 10rem;
+            }
+
+            h2 {
+                text-align: center;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+.flex-contacto div h4 {
+    top: 30rem;
+}

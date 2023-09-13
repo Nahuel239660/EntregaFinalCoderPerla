@@ -1,0 +1,23 @@
+@media (max-width:425px) {
+    .footer-global{
+        .derechos{
+            font-size: 12px;
+        }
+    }
+    .main-ol{
+        .grids{
+            .ofertas{
+                height: 26rem;
+                width: 17rem;
+                .container-lyu{
+                    .lyu2{
+                        flex-direction: column;
+                        .mas-info{
+                            justify-content: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
