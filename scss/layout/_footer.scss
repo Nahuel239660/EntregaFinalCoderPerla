@@ -1,81 +1,75 @@
-.footer-global {
-    @include flex (row, center, center, wrap);
-    height: 31.25rem;
-    background-color: $footer-color;
-    position: relative;
-
-    .f-logo {
-        width: 12.5rem;
-        height: 12.5rem;
+.footer {
+    background-color: #333; // Cambia el color de fondo según tu diseño
+    color: #fff; // Cambia el color del texto según tu diseño
+    padding: 40px 0; // Ajusta el espaciado interior según tus preferencias
+  
+    .container {
+      text-align: center; // Alinea el contenido del footer al centro
     }
-
-    .redes-footer-container {
-        padding-left: 0px !important;
-
-        ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: space-between;
-            margin-top: 1rem;
-            padding-left: 0px !important;
-        }
+  
+    h4 {
+      font-size: 18px; // Cambia el tamaño de fuente de los encabezados según tu diseño
+      margin-bottom: 20px; // Espaciado inferior entre encabezado y lista de enlaces
     }
-
-    .servicios-footer-container {
-        .servicios-footer {
-            font-size: 1rem;
-        }
-
+  
+    ul {
+      list-style: none; // Elimina los puntos de lista
+      padding: 0; // Elimina el relleno de la lista
+    }
+  
+    li {
+      margin-bottom: 10px; // Espaciado entre elementos de la lista
+    }
+  
+    .subscribe {
+      display: flex; // Alinea el formulario y el botón en línea
+      margin-top: 20px; // Espaciado superior entre el formulario y el botón
+  
+      .subscribe__input {
+        width: 70%; // Ajusta el ancho del campo de entrada según tu diseño
+        padding: 10px; // Ajusta el relleno del campo de entrada según tu diseño
+        border: none; // Elimina el borde del campo de entrada
+        border-radius: 5px; // Agrega bordes redondeados al campo de entrada
+      }
+  
+      .subscribe__btn {
+        background-color: #f0f0f0; // Cambia el color de fondo del botón según tu diseño
+        color: #333; // Cambia el color del texto del botón según tu diseño
+        border: none; // Elimina el borde del botón
+        border-radius: 5px; // Agrega bordes redondeados al botón
+        padding: 10px 20px; // Ajusta el relleno del botón según tu diseño
+        margin-left: 10px; // Espaciado a la izquierda del botón
+        cursor: pointer; // Cambia el cursor al pasar sobre el botón
+      }
+    }
+  
+    .social_profile {
+      margin-top: 20px; // Espaciado superior entre las redes sociales y el formulario
+  
+      ul {
+        padding: 0; // Elimina el relleno de la lista de redes sociales
+        list-style: none; // Elimina los puntos de lista
+  
         li {
-            transition: transform 0.6s cubic-bezier(0.37, 0, 0.63, 1);
-
-            &:hover {
-                transform: scale(1.1);
-            }
-
-            list-style-type: none;
-
-            a {
-                &hover {
-                    text-shadow: 0px 0px 5px;
-                }
-
-                text-decoration: none;
-                color: $white;
-
-                &:hover {
-                    color: $hovers;
-                }
-            }
+          display: inline; // Coloca los íconos de redes sociales en línea
+          margin-right: 10px; // Espaciado entre íconos de redes sociales
         }
-    }
-
-    .prueba-logo {
-        @include flex (row, center, center, wrap);
-        gap: 13rem;
-        padding: 1rem;
-    }
-
-    .container-contacto-f {
-        color: $white;
-
-        .contacto-f {
-            font-size: 1.75rem;
-            font-weight: normal;
+  
+        a {
+          color: #fff; // Cambia el color de los íconos de redes sociales según tu diseño
+          font-size: 18px; // Cambia el tamaño de fuente de los íconos según tu diseño
+          text-decoration: none; // Elimina la subrayado de los íconos de redes sociales
+  
+          &:hover {
+            color: #f0f0f0; // Cambia el color al pasar el mouse sobre los íconos de redes sociales
+          }
         }
-
-        .gmail {
-            font-size: 1.25rem;
-            font-weight: normal;
-        }
+      }
     }
-}
-
-.derechos {
-    @include flex (row, center, unset, wrap);
-    position: absolute;
-    color: $white;
-    bottom: 1rem;
-    font-weight: normal;
-    font-size: 1.25rem;
-}
+  
+    .derechos {
+      font-size: 14px; // Cambia el tamaño de fuente del texto de derechos según tu diseño
+      margin-top: 20px; // Espaciado superior entre el texto de derechos y las redes sociales
+    }
+  }
+  
