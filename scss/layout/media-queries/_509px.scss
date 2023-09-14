@@ -1,11 +1,42 @@
-@media (max-width:509px) {
-    .footer{
-        .prueba-logo{
-            display: flex!important;
-            flex-direction: column!important;
-            align-items: center!important;
-            justify-content: center!important;
-            gap: 3rem!important;
-        }
+@media (max-width: 509px) {
+    .navbar {
+      .navbar-brand img {
+        max-width: 100px;
+        margin-top: 0.5rem;
+      }
+      .navbar-toggler {
+        margin-top: 1rem;
+      }
     }
-}
+  
+    .footer {
+        text-align: center; // Centrar contenido en el footer
+        // ... Tu código existente
+        
+        .single_footer h4 {
+          text-align: center; // Centrar los encabezados h4
+        }
+      
+        .single_footer_subscribe {
+          display: flex;
+          flex-direction: column;
+          align-items: center; // Centrar elementos verticalmente
+          text-align: center; // Centrar el contenido del Subscribe today
+      
+          .signup_form {
+            margin-top: 1rem;
+            text-align: center;
+      
+            input.subscribe__input {
+              width: 100%; // Ancho completo del campo de entrada
+              margin-bottom: 0.5rem;
+            }
+            
+            button.subscribe__btn {
+              margin-top: 0.5rem; // Separación entre el campo de entrada y el botón
+            }
+          }
+        }
+      }
+  }
+  

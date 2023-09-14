@@ -1,138 +1,141 @@
-@media (max-width:768px) {
+@media (max-width: 768px) {
+    // Ajustes para el encabezado
     header {
-        .navbar-index {
-            display: none;
+      .navbar-index {
+        display: none;
+      }
+  
+      .menu-desplegable {
+        z-index: 1;
+  
+        a {
+          text-decoration: none;
         }
-
-        .menu-desplegable {
-            z-index: 1;
-            a {
-                text-decoration: none;
+  
+        display: flex;
+        justify-content: space-between;
+        background: #1A2980;
+        background: -webkit-linear-gradient(to left, #26D0CE, #1A2980);
+        background: linear-gradient(to left, #26D0CE, #1A2980);
+        box-shadow: 1px 1px 5px 0px grey;
+        position: sticky;
+        top: 0;
+        width: 100%;
+  
+        .menu {
+          list-style: none;
+  
+          a {
+            display: block;
+            padding: 1.875rem;
+            color: white;
+  
+            &:hover {
+              background-color: #9F1B09;
             }
-
+          }
+        }
+  
+        .logo-mq {
+          img {
+            width: 220px;
+            height: 80px;
             display: flex;
-            justify-content: space-between;
-            background: #1A2980;
-            background: -webkit-linear-gradient(to left, #26D0CE, #1A2980);
-            background: linear-gradient(to left, #26D0CE, #1A2980);
-            box-shadow: 1px 1px 5px 0px grey;
-            position: sticky;
-            top: 0;
+            align-items: center;
+            margin: 0.5rem;
+          }
+        }
+  
+        .nav-hamb {
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          background: #1A2980;
+          background: -webkit-linear-gradient(to left, #26D0CE, #1A2980);
+          background: linear-gradient(to left, #26D0CE, #1A2980);
+          overflow-x: hidden;
+          max-height: 0;
+          transition: max-height 0.5s ease-out;
+        }
+  
+        .hamb {
+          z-index: 1;
+          cursor: pointer;
+          float: right;
+          padding: 40px 20px;
+          position: sticky;
+        }
+  
+        .hamb-line {
+          background-color: white;
+          display: block;
+          height: 2px;
+          position: relative;
+          width: 24px;
+  
+          &::before,
+          &::after {
+            background-color: white;
+            content: "";
+            display: block;
+            height: 100%;
+            position: absolute;
+            transition: all 0.2s ease-out;
             width: 100%;
-
-            .menu {
-                list-style: none;
-
-                a {
-                    display: block;
-                    padding: 1.875rem;
-                    color: white;
-
-                    &:hover {
-                        background-color: #9F1B09;
-                    }
-                }
-            }
-
-            .logo-mq {
-                img {
-                    width: 220px;
-                    height: 80px;
-                    display: flex;
-                    align-items: center;
-                    margin: 0.5rem;
-                }
-            }
-
+            top: -5px;
+          }
+  
+          &::before {
+            top: 5px;
+          }
+        }
+  
+        .side-menu {
+          display: none;
+  
+          &:checked~ {
             .nav-hamb {
-                width: 100%;
-                height: 100%;
-                position: fixed;
-                background: #1A2980;
-                background: -webkit-linear-gradient(to left, #26D0CE, #1A2980);
-                background: linear-gradient(to left, #26D0CE, #1A2980);
-                overflow-x: hidden;
-                max-height: 0;
-                transition: max-height .5s ease-out;
+              max-height: 50%;
             }
-
+  
             .hamb {
-                z-index: 1;
-                cursor: pointer;
-                float: right;
-                padding: 40px 20px;
-                position: sticky;
-            }
-
-            .hamb-line {
-                background-color: white;
-                display: block;
-                height: 2px;
-                position: relative;
-                width: 24px;
-
-                &::before,
-                &::after {
-                    background-color: white;
-                    content: "";
-                    display: block;
-                    height: 100%;
-                    position: absolute;
-                    transition: all .2s ease-out;
-                    width: 100%;
-                    top: -5px;
-                }
-
+              .hamb-line {
+                background: transparent;
+  
                 &::before {
-                    top: 5px;
+                  transform: rotate(-45deg);
+                  top: 0;
                 }
-            }
-
-            .side-menu {
-                display: none;
-
-                &:checked~ {
-                    .nav-hamb {
-                        max-height: 50%;
-                    }
-
-                    .hamb {
-                        .hamb-line {
-                            background: transparent;
-
-                            &::before {
-                                transform: rotate(-45deg);
-                                top: 0;
-                            }
-
-                            &::after {
-                                transform: rotate(45deg);
-                                top: 0;
-                            }
-                        }
-                    }
+  
+                &::after {
+                  transform: rotate(45deg);
+                  top: 0;
                 }
+              }
             }
+          }
         }
+      }
     }
-
-
+  
+    // Ajustes para el contenido principal
     .main-ol {
-        .grids {
-            .ofertas {
-                width: 25rem;
-                height: 25rem;
-
-                .logo-negro {
-                    width: 10rem;
-                }
-
-                .container-lyu {
-                    .lyu1 {
-                        flex-direction: column;
-                    }
-                }
+      .grids {
+        .ofertas {
+          width: 25rem;
+          height: 25rem;
+  
+          .logo-negro {
+            width: 10rem;
+          }
+  
+          .container-lyu {
+            .lyu1 {
+              flex-direction: column;
             }
+          }
         }
+      }
     }
-}
+  }
+  

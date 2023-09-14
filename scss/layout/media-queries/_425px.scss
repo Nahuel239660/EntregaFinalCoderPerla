@@ -1,23 +1,70 @@
-@media (max-width:425px) {
-    .footer{
-        .derechos{
-            font-size: 12px;
+@media (max-width: 425px) {
+    .footer {
+      .derechos {
+        font-size: 12px;
+      }
+    }    
+        .cards-servicios {
+          font-size: 12px;
+          max-height: 250px; /* Altura máxima deseada para cada cuadro */
+          overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
+          text-align: center; /* Centra el texto en el cuadro */
+          
         }
-    }
-    .main-ol{
-        .grids{
-            .ofertas{
-                height: 26rem;
-                width: 17rem;
-                .container-lyu{
-                    .lyu2{
-                        flex-direction: column;
-                        .mas-info{
-                            justify-content: unset;
-                        }
-                    }
-                }
+    .main-ol {
+      .grids {
+        .ofertas {
+          height: 26rem;
+          width: 17rem;
+  
+          .container-lyu {
+            .lyu2 {
+              flex-direction: column;
+  
+              .mas-info {
+                justify-content: unset;
+              }
             }
+          }
         }
+      }
     }
-}
+    .main-tcn {
+        .parte-de-ne {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          gap: 2rem;
+          
+          .cards-servicios2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            
+            figure {
+              width: 30px;
+              
+              text-align: center;
+            }
+      
+            h3 {
+              font-size: 15px;
+              margin: 0.5rem 0;
+            }
+      
+            p {
+              font-size: 12px;
+            }
+          }
+      
+          .envianos-tu-cv a,
+          .envianos-tu-cv h3 {
+            font-size: 1rem;
+          }
+        }
+      }
+      
+  }
+  

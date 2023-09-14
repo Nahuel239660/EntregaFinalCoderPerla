@@ -1,18 +1,84 @@
-@media (max-width:1024px) {
-    .footer-global{
+@media (max-width: 1024px) {
+    .footer-global {
         height: 40rem;
-        .prueba-logo{
+        .prueba-logo {
             gap: 7rem;
         }
     }
-    .main-ol{
-        .grids{
-            .ofertas{
+
+    .main-ol {
+        font-size: 14px;
+        .grids {
+            .ofertas {
                 width: 35rem;
-                .lyu-r{
+                .lyu-r {
                     gap: unset;
+                }
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+
+                .container-lyu {
+                    width: 100%;
+                    text-align: center;
+
+                    .lyu2 {
+                        max-width: 80%;
+                    }
+
+                    h4 {
+                        margin: 1rem 0;
+                    }
                 }
             }
         }
     }
+    
+      /* Código SCSS sin comentarios */
+
+.main-contacto {
+  .shadow {
+    form {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+
+      h3 {
+        text-align: center;
+      }
+
+      .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="phone"] {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.flex-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mapa {
+  iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+  }
+}
+
+        
+      
 }
